@@ -24,6 +24,8 @@
         $result = mysqli_query($link,$sql);
         if($row=(mysqli_fetch_array($result))){
             echo "有记录，用户名密码正确，可以跳转";
+            header('Location:admin.php');
+
         }else{
             echo "<span>没记录，用户名密码错误</span>";
         }
