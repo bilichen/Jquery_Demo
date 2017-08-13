@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <title>Jquery选择器Demo</title>
+    <style>
+        #ul1 ul{
+            display: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul id="ul1">
+            <li>收藏夹
+                <ul>
+                    <li>收藏夹1</li>
+                    <li>收藏夹2</li>
+                    <li>收藏夹3</li>
+                    <li>收藏夹4</li>
+                </ul>
+            </li>
+            <li>我的电脑
+                <ul>
+                    <li>C盘</li>
+                    <li>D盘</li>
+                    <li>E盘</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+//        $("#li1").click(function(){
+//            $("#li1>ul").toggle();
+//        });
+//        $("#li2").click(function(){
+//            $("#li2>ul").toggle();
+//        });
+        $("#ul1>li").click(function (){
+           $n = 1;
+            $m = 2;
+            $c = $n+$m;
+            alert($c);
+        });
+
+    </script>
+
+</body>
+</html>
